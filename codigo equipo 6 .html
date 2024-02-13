@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ESTILO.css">
+
+    <title></title>
+    <body>
+        <form action="#" method="POST">
+    <header>
+            
+        </header>
+            
+                <legend>Información </legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="" required><br><br>
+    
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="" required><br><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="" required><br><br>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder=""><br><br>
+        
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+            <button type="button" onclick="window.location.reload()">Actualizar</button>
+        </form>
+    </body>
+    <style>
+        
+        /* Estilos para el cuerpo */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/002/623/310/non_2x/black-background-with-blue-arrows-modern-template-for-your-business-and-projects-abstract-widescreen-background-vector.jpg'); /* Cambia la ruta a la ubicación de tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        /* Estilos para el contenedor del menú */
+        .menu-container {
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Estilos para la lista del menú */
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Estilos para los elementos del menú */
+        .menu li {
+            float: left;
+        }
+
+        .menu li a {
+            display: block;
+            color: rgba(240, 241, 230, 0.678);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu li a:hover {
+            background-color: #1212e4;
+        }
+
+        /* Estilos para los elementos desplegables */
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .submenu li a {
+            color: rgb(20, 177, 224);
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        /* Mostrar elementos desplegables al pasar el cursor */
+        .menu li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="#">Servicio 1</a></li>
+                    <li><a href="#">Servicio 2</a></li>
+                    <li><a href="#">Servicio 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Productos</a>
+                <ul class="submenu">
+                    <li><a href="#">Producto 1</a></li>
+                    <li><a href="#">Producto 2</a></li>
+                    <li><a href="#">Producto 3</a></li>
+                </ul>
+            </li>
+          <li>
+            <a href="#">Contacto</a>
+            <ul class="submenu">
+                <li><a href="#">MEDINA NARVAEZ HUGO </a></li>
+                <li><a href="#">hugomedina6776@gmail.com</a></li>
+                
+        </ul>
+</body>
+</html>
